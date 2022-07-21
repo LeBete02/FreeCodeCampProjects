@@ -1,0 +1,169 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Survey Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    
+    <form id="survey-form" action='Form Data.txt' method="post">
+      <div class="interact">
+        <fieldset>
+          <label id="name-label">Name: <input id="name" type="text" name="name" placeholder="Enter your full name" required /></label>
+          
+          <label id="email-label">Enter Your Email: <input id="email" type="email" name="email" placeholder="Enter your email address" required /></label>
+          
+          <label id="number-label">Age: <input type="number" id="number" name="number" min="0" max="150" placeholder="Enter your age number (optional)"></label>
+  
+          <label>Upload a profile picture: <input type="file" name="file" /></label>
+        </fieldset>
+  
+  
+        <fieldset>
+          <label>Would you recommend this form style?</label>
+            <label><input type="radio" name="preference" class="inline" value="1" /> Yes</label>
+            <label><input type="radio" name="preference" class="inline" value="2"/> No</label>
+            <label><input type="radio" name="preference" class="inline" value="3"/> Maybe</label>
+          
+          <label>On a scale of 0-5, how much would you rate this form?
+            <select name="page-rating" id="dropdown" required>
+              <option value="">(select one)</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+  
+            <label>Any comments or suggestions?
+              <textarea name="bio" rows="3" cols="30" placeholder="Write here..."></textarea>
+            </label>
+        </fieldset>
+  
+  
+        <fieldset>
+          <label>
+            <input type="checkbox" name="terms" class="inline" value="4" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          </label>
+          <label>
+            <input type="checkbox" name="permission" class="inline" value="5" required /> 
+            Please chech this box for promotional updates
+          </label>
+        </fieldset>
+        
+  
+  
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+      
+    </form>
+
+  </body>
+  
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+html {
+  height: 100%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    background-color: rgb(105, 91, 84);
+    width: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3e4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #314e61;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b4f41;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+
+  a {
+    color: #dfdfe2;
+  }
+
+  ::placeholder {
+    color: white;
+    opacity: 1; 
+  }
+
+** end of undefined **
+
